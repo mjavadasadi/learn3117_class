@@ -18,17 +18,15 @@ document.getElementById("contactForm").addEventListener("submit", function (even
 
 
 
-
-
-
-
-
-
-
 let contactForm = document.getElementById("contactForm");
 let confirmationMassage = document.getElementById("confirmationMassage");
+let body=document.querySelector("body")
 
 contactForm.addEventListener('submit', function (event) {
   event.preventDefault();
   confirmationMassage.style.display='block';
+  body.style.transition=background_color 1s ease_in 3s
+    body.style.background_color=#42e016
+    
+    
 });
